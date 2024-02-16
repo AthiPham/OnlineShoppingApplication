@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/cart_list_title_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_name_product"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/cart_list_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_quantity_product"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/cart_list_title_product"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/cart_list_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:layout_below="@id/cart_list_title_product"
+            android:layout_alignEnd="@+id/cart_list_title_product"
+            android:textSize="18sp"
+
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_price_product"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/cart_list_quantity"
+                android:id="@+id/cart_list_price_text"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/cart_list_price_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/number"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/cart_list_storage"
+                android:layout_alignEnd="@id/cart_list_storage"
+                android:textSize="18sp"
+
+                />
+
+
+</RelativeLayout>

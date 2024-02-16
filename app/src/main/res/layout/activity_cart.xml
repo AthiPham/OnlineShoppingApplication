@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity.CartActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/total_price_cart_text_view"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="@string/header_cart"
+        android:textStyle="bold"
+        />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_arrow"
+        app:tint="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/back_button"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_price_cart_text_view"
+        android:layout_above="@+id/layout_price_nextbtn">
+        <include layout="@layout/cart_recycler_view">
+        </include>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_price_nextbtn"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp"
+            android:background ="@drawable/buttons"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/btn_buy"
+            android:id="@+id/next_cartList"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@id/next_cartList"
+            android:padding="10dp"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/total_price_cart"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+
+
+    <!--
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@id/frame_layout_cart_recycler_view"
+        android:textColor="@color/colorPrimary"
+        android:text="Congratulation your order has been placed succesfully soon you will reccive that at yoyr door steps"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:visibility="gone"
+        /> -->
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity.AdminAddUserActivity">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/header_update_delete_user"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_arrow"
+        app:tint="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/back_button"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_text"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginHorizontal="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:id="@+id/user_name_et"
+        android:text="@string/editview_name_user"
+        android:imeOptions="actionDone"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name_et"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginHorizontal="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/user_phone_text"
+        android:text="@string/textview_phone_user"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_phone_text"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginHorizontal="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/user_password_et"
+        android:text="@string/editview_password_user"
+        android:imeOptions="actionDone"
+        />
+
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/display_password_check_box"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_password_et"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:text="@string/display_password"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cbd_strokeColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_update_user"
+        android:layout_below="@id/display_password_check_box"
+        android:text="@string/btn_update"
+        android:layout_marginHorizontal="45dp"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttons"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_delete_user"
+        android:layout_below="@id/btn_update_user"
+        android:text="@string/btn_delete"
+        android:layout_marginHorizontal="45dp"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttons"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

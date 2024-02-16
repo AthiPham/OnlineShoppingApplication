@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity.ConfirmOrderActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/header_confirm_order"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/headerTxt"
+        />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_arrow"
+        app:tint="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/back_button"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerTxt"
+        android:layout_above="@id/total_payment_cart">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         >
+
+            <TextView
+                android:id="@+id/tv_receiver_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_receiver_info"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/name_edit_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@id/tv_receiver_info"
+                android:background="@drawable/input_design"
+                android:padding="15dp"
+                android:hint="@string/editview_name_user"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:id="@+id/phone_edit_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@id/name_edit_confirm"
+                android:background="@drawable/input_design"
+                android:padding="15dp"
+                android:hint="@string/editview_phone_user"
+                android:inputType="phone"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:id="@+id/adress_edit_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@id/phone_edit_confirm"
+                android:background="@drawable/input_design"
+                android:padding="15dp"
+                android:hint="@string/editview_address"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                />
+
+            <EditText
+                android:id="@+id/city_edit_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_below="@id/adress_edit_confirm"
+                android:background="@drawable/input_design"
+                android:padding="15dp"
+                android:hint="@string/editview_address_city"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                />
+
+            <FrameLayout
+                android:id="@+id/recycler_product_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city_edit_confirm">
+                <include layout="@layout/cart_recycler_view">
+                </include>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/total_price_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_product_order"
+                android:text="@string/textview_total_price_order"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/shipping_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_price_cart"
+                android:text="@string/textview_shipping_fee"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"/>
+            <TextView
+                android:id="@+id/total_payment_cart_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shipping_fee"
+                android:text="@string/textview_total_payment_order"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_above="@id/confirm_button_confirm"
+        android:padding="10dp"
+        android:gravity="end"
+        android:text="@string/textview_total_payment_order"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/total_payment_cart"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"/>
+
+    <Button
+        android:id="@+id/confirm_button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/btn_confirm"
+        android:background="@drawable/buttons"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>

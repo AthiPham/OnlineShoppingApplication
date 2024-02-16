@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity.AdminAddUserActivity">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/header_add_user"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_arrow"
+        app:tint="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/back_button"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_text"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginHorizontal="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:id="@+id/user_name_et"
+        android:hint="@string/editview_name_user"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name_et"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginHorizontal="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:id="@+id/user_phone_et"
+        android:hint="@string/editview_phone_user"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_phone_et"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:layout_marginHorizontal="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/user_password_et"
+        android:hint="@string/editview_password_user"
+        android:imeOptions="actionDone"
+        />
+
+    <!--
+    <com.rey.material.widget.CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_admin_check_box"
+        android:layout_below="@id/user_password_et"
+        style="@style/Material.Drawable.CheckBox"
+        android:text="Tick if it is admin account"
+        android:textColor="@color/colorPrimaryDark"
+        app:cbd_strokeColor="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:padding="20dp"
+        />
+        -->
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add_new_user"
+        android:layout_below="@id/user_password_et"
+        android:text="@string/btn_add"
+        android:layout_marginHorizontal="45dp"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttons"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+
+        />
+
+
+</RelativeLayout>

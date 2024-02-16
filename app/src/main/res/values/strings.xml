@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">OnlineShoppingApp</string>
+    <string name="author">Phạm Anh Thi</string>
+    <string name="log_in_as_admin">Login as admin</string>
+    <!--   <string name="login_text">\"Login \"</string> -->
+    <string name="please_wait_text">please wait..processing</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="back_button">Back Button</string>
+    <string name="cart_button">Cart Button</string>
+
+    <string name="signup_btn">Đăng ký</string>
+    <string name="login_btn">Đăng nhập</string>
+    <string name="im_admin">Bạn là người bán?</string>
+    <string name="im_not_admin">Bạn là người mua?</string>
+    <!--<string name="remember_me">Lưu thông tin</string> -->
+    <string name="logout_btn">Đăng xuất</string>
+
+
+    <string name="header_product_management">Quản lý sản phẩm</string>
+    <string name="header_add_product">Thêm sản phẩm</string>
+    <string name="image_product">Product Image</string>
+    <string name="editview_name_product">Nhập tên sản phẩm</string>
+    <string name="editview_description_product">Nhập mô tả sản phẩm</string>
+    <string name="editview_price_product">Nhập giá sản phẩm</string>
+    <string name="editview_inventory_product">Nhập lượng tồn kho sản phẩm</string>
+    <string name="btn_add">Thêm mới</string>
+
+    <string name="header_update_delete_product">Sửa xóa sản phẩm</string>
+    <string name="textview_name_product">Tên sản phẩm</string>
+    <string name="textview_description_product">Mô tả sản phẩm</string>
+    <string name="textview_price_product">Giá sản phẩm (VNĐ):</string>
+    <string name="textview_inventory_product">Lượng tồn kho sản phẩm</string>
+    <string name="textview_category_product">Phân loại sản phẩm</string>
+    <string name="btn_update">Cập nhật</string>
+    <string name="btn_delete">Xóa</string>
+
+    <string name="header_detail_product">Chi tiết sản phẩm</string>
+
+
+    <string name="header_user_management">Quản lý người mua</string>
+    <string name="header_add_user">Thêm người mua</string>
+    <string name="editview_name_user">Nhập tên người dùng</string>
+    <string name="editview_phone_user">Nhập số điện thoại</string>
+    <string name="editview_password_user">Nhập mật khẩu</string>
+    <string name="header_update_delete_user">Sửa xóa người mua</string>
+    <string name="textview_name_user">Tên người dùng</string>
+    <string name="textview_phone_user">Số điện thoại</string>
+    <string name="textview_password_user">Mật khẩu</string>
+    <string name="textview_address">Địa chỉ nhận</string>
+    <string name="editview_address">Nhập địa chỉ nhận</string>
+    <string name="editview_address_city">Nhập thành phố nhận</string>
+    <string name="display_password">Hiển thị mật khẩu</string>
+
+    <string name="header_detail_order">Chi tiết đơn hàng</string>
+    <string name="textview_date_order">Ngày đặt hàng</string>
+    <string name="textview_state_order">Tình trạng đơn</string>
+    <string name="textview_total_price_order">Tổng đơn hàng (VNĐ)</string>
+    <string name="header_confirm_order">Thông tin thanh toán</string>
+    <string name="confirm_receiver_info">Thông tin người nhận:</string>
+    <string name="textview_shipping_fee">Phí vận chuyển (VNĐ)</string>
+    <string name="textview_total_payment_order">Tổng thanh toán (VNĐ)</string>
+    <string name="btn_cancel">Hủy đơn</string>
+    <string name="btn_next_step_order">Tiếp theo</string>
+    <string name="btn_next_step_accept">Chấp nhận đơn</string>
+    <string name="btn_next_step_packed">Đã đóng gói đơn</string>
+    <string name="btn_next_step_received">Đã nhận đơn</string>
+
+
+    <string name="header_order_history">Lịch sử đơn hàng</string>
+    <string name="header_order_management">Quản lý đơn hàng</string>
+    <string name="header_cart">Giỏ hàng</string>
+    <string name="btn_buy">Đặt hàng</string>
+    <string name="textview_quantity_product">Số lượng: </string>
+    <string name="btn_add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="btn_confirm">Xác nhận đặt hàng</string>
+    <string name="btn_search">Tìm kiếm</string>
+    <string name="header_search_product">Tìm kiếm sản phẩm</string>
+
+
+    <string name="header_statistic_month">Thống kê tháng</string>
+    <string name="header_statistic_year">Thống kê</string>
+    <string name="statistic_inventory">Thống kê tồn kho</string>
+    <string name="sum_inventory">Tổng hàng tồn kho:</string>
+    <string name="detail_text">Chi tiết:</string>
+
+    <string name="statistic_revenue">Thống kê doanh thu</string>
+    <string name="sum_revenue">Tổng doanh thu trong năm (VNĐ):</string>
+    <string name="revenue_month">Doanh thu của tháng (VNĐ):</string>
+
+    <string name="statistic_sold_product">Thống kê sản phẩm đã bán</string>
+    <string name="sum_sold_product">Tổng sản phẩm đã bán:</string>
+
+
+    <string name="tittle_number_pick">Chọn năm</string>
+    <string name="number">0</string>
+    <string name="message_content">Tin nhắn</string>
+    <string name="chat_title">Nhắn tin</string>
+    <string name="time">00:00</string>
+</resources>

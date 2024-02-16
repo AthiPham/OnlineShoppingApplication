@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_name_user"
+            android:textColor="@android:color/white"
+            android:id="@+id/user_name_admin"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_phone_user"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/user_name_admin"
+            android:id="@+id/phone_number_admin"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_total_payment_order"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/address"
+            android:id="@+id/total_payment_admin"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_address"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/phone_number_admin"
+            android:id="@+id/address"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_date_order"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/total_payment_admin"
+            android:id="@+id/order_date_time_admin_new"
+            android:textSize="20sp"
+
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

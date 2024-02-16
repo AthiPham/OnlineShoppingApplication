@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerActivity.OrderDetailsActivity">
+
+    <TextView
+        android:id="@+id/head_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/header_detail_order"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_arrow"
+        app:tint="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/back_button"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_text"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_info_layout"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_name_user"
+                android:textColor="@android:color/black"
+                android:id="@+id/name_order"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_phone_user"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/name_order"
+                android:id="@+id/phone_number_order"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_address"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/phone_number_order"
+                android:id="@+id/address_order"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_date_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/address_order"
+                android:id="@+id/date_order"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_state_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/date_order"
+                android:id="@+id/state_order"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_total_payment_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/state_order"
+                android:id="@+id/total_payment_order"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_shipping_fee"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/total_payment_order"
+                android:id="@+id/shipping_fee_order"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_total_price_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/shipping_fee_order"
+                android:id="@+id/total_price_order"
+                android:textSize="20sp"
+
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/total_price_order">
+                <include layout="@layout/cart_recycler_view">
+                </include>
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

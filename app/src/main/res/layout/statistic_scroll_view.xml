@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/frame_statistic_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <include layout="@layout/statistic_inventory" />
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/frame_statistic_revenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame_statistic_inventory"
+            >
+            <include layout="@layout/statistic_revenue" />
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

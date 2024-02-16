@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/revenue_month"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/header_text_statistic_revene_of_month"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_text_statistic_revene_of_month"
+            android:layout_alignParentEnd="true"
+            android:text="@string/number"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:id="@+id/number_revenue_of_month"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/statistic_sold_product"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:id="@+id/header_text_statistic_sold_product"
+            android:layout_below="@id/number_revenue_of_month"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_text_statistic_sold_product"
+            android:layout_alignParentStart="true"
+            android:text="@string/sum_sold_product"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:id="@+id/text_sum_sold_product"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_text_statistic_sold_product"
+            android:layout_alignParentEnd="true"
+            android:text="@string/number"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:id="@+id/number_sum_sold_product"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_sum_sold_product"
+            android:layout_alignParentStart="true"
+            android:text="@string/detail_text"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:id="@+id/text_detail_sold_product"
+            style="@style/TextAppearance.AppCompat.Large"
+            />
+        <!--
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart_sold"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/text_detail_sold_product"
+            />
+            -->
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

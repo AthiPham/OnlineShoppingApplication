@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "835914522098",
+    "project_id": "onlineshoppingapp-f37cf",
+    "storage_bucket": "onlineshoppingapp-f37cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835914522098:android:221166c2dff5bfce5f1f6b",
+        "android_client_info": {
+          "package_name": "com.example.onlineshoppingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfYeAttQVzz4rSpu42jRwYORM3K5sfl9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835914522098:android:d38b9f9106a485cc5f1f6b",
+        "android_client_info": {
+          "package_name": "com.thipna219166.onlineshoppingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfYeAttQVzz4rSpu42jRwYORM3K5sfl9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

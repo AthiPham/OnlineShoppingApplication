@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity.AdminOrderDetailActivity">
+
+    <TextView
+        android:id="@+id/head_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/header_detail_order"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back_arrow"
+        app:tint="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/back_button"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head_text">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_info_layout"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/admin_name_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_name_user"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/admin_phone_number_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_phone_user"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/admin_name_order"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/admin_address_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_address"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/admin_phone_number_order"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/admin_date_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_date_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/admin_address_order"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_state_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/admin_date_order"
+                android:id="@+id/admin_state_order"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_total_payment_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/admin_state_order"
+                android:id="@+id/admin_total_payment_order"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_shipping_fee"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/admin_total_payment_order"
+                android:id="@+id/admin_shipping_fee_order"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_total_price_order"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/admin_shipping_fee_order"
+                android:id="@+id/admin_total_price_order"
+                android:textSize="20sp"
+
+                />
+
+
+            <FrameLayout
+                android:id="@+id/frame_layout_card_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/admin_total_price_order">
+                <include layout="@layout/cart_recycler_view">
+                </include>
+            </FrameLayout>
+
+
+
+            <Button
+                android:id="@+id/cancel_order_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/frame_layout_card_recycle_view"
+                android:background="@drawable/buttons"
+                android:text="@string/btn_cancel"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/next_step_order_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/frame_layout_card_recycle_view"
+                android:background="@drawable/buttons"
+                android:text="@string/btn_next_step_order"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
